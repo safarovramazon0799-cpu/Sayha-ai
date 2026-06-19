@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: #0D0F1A;
+  --foreground: #F0EDE4;
+  --card: #1A1D33;
+  --card-foreground: #F0EDE4;
+  --popover: #1A1D33;
+  --popover-foreground: #F0EDE4;
+  --primary: #C9A227;
+  --primary-foreground: #0D0F1A;
+  --secondary: #2A2D4A;
+  --secondary-foreground: #F0EDE4;
+  --muted: #131629;
+  --muted-foreground: #9B97A8;
+  --accent: #C9A227;
+  --accent-foreground: #0D0F1A;
+  --destructive: #E74C3C;
+  --border: #2A2D4A;
+  --input: #1A1D33;
+  --ring: #C9A227;
+  --gold: #C9A227;
+  --gold-light: #E8C547;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0D0F1A;
+  color: #F0EDE4;
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Gold divider */
+.gold-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #C9A227, transparent);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #131629;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2D4A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A227;
+}
+
+/* Chat message animation */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.message-appear {
+  animation: slideUp 0.3s ease forwards;
+}
+
+/* Prose-style legal text */
+.legal-text strong {
+  color: #C9A227;
+}
+.legal-text hr {
+  border-color: #2A2D4A;
+  margin: 12px 0;
+}

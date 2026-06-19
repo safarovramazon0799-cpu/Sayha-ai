@@ -1,0 +1,38 @@
+{
+  "card_number": "5614681284815291",
+  "card_owner": "Safarov Ramazon",
+  "web_plans": [
+    {
+      "key": "basic",
+      "name": "Basic",
+      "price": "29 000 so'm/oy",
+      "features": ["50 ta tahlil", "Shartnoma tahlili", "Hujjat yaratish"],
+      "color": "#2196F3",
+      "analysis_limit": 50,
+      "days": 30
+    },
+    {
+      "key": "standard",
+      "name": "Standard",
+      "price": "59 000 so'm/oy",
+      "features": ["150 ta tahlil", "Barcha asosiy imkoniyatlar", "Ustunlik qo'llab-quvvatlash"],
+      "color": "#C9A227",
+      "analysis_limit": 150,
+      "days": 30
+    },
+    {
+      "key": "premium",
+      "name": "Premium",
+      "price": "99 000 so'm/oy",
+      "features": ["Cheksiz tahlil", "Barcha imkoniyatlar", "VIP qo'llab-quvvatlash"],
+      "color": "#9C27B0",
+      "analysis_limit": 999999,
+      "days": 30
+    }
+  ],
+  "bot_plans": {
+    "basic":    { "name": "Basic",    "price": "29 000 so'm/oy", "days": 30,  "analysis_limit": 50,     "emoji": "🔵", "features": "50 ta tahlil | Shartnoma tahlili | Hujjat yaratish" },
+    "standard": { "name": "Standard", "price": "59 000 so'm/oy", "days": 30,  "analysis_limit": 150,    "emoji": "🟡", "features": "150 ta tahlil | Barcha asosiy imkoniyatlar | Ustunlik support" },
+    "premium":  { "name": "Premium",  "price": "99 000 so'm/oy", "days": 30,  "analysis_limit": 999999, "emoji": "💎", "features": "Cheksiz tahlil | Barcha imkoniyatlar | VIP qo'llab-quvvatlash" }
+  }
+}
